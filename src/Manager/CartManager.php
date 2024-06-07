@@ -43,9 +43,9 @@ class CartManager {
     }
 
     public function save(Order $order): void {
-        $this->cartSessionStorage->setCart($order);
         $this->em->persist($order);
         $this->em->flush();
+        $this->cartSessionStorage->setCart($order);
     }
 
     private function mergeCart(Order $cartDb, Order $cartSession): Order {

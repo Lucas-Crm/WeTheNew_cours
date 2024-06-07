@@ -54,13 +54,12 @@ class Order
     private ?string $status = null;
 
     #[ORM\ManyToOne(inversedBy: 'orders')]
-    #[ORM\JoinColumn(nullable: false)]
     private ?User $user = null;
 
     /**
      * @var Collection<int, OrderItem>
      */
-    #[ORM\OneToMany(targetEntity: OrderItem::class, mappedBy: 'orderRef', orphanRemoval: true)]
+    #[ORM\OneToMany(targetEntity: OrderItem::class, mappedBy: 'orderRef', cascade: ['persist', 'remove'], orphanRemoval: true)]
     private Collection $orderItems;
 
     public function __construct()
@@ -119,10 +118,18 @@ class Order
 
     public function addOrderItem(OrderItem $orderItem): static
     {
-        if (!$this->orderItems->contains($orderItem)) {
-            $this->orderItems->add($orderItem);
-            $orderItem->setOrderRef($this);
+
+        foreach($this->orderItems as $existingOrderItem){
+            if($existingOrderItem->equals($orderItem)){
+                $existingOrderItem->setQuantity(
+                    $existingOrderItem->getQuantity() + 1
+                );
+                return $this;
+            }
         }
+
+        $this->orderItems[] = $orderItem;
+        $orderItem->setOrderRef($this);
 
         return $this;
     }
