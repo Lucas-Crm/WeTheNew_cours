@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/base/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/base/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Frontend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Frontend/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/abstracts/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/components/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_breadcrumb.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/layout/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Order/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/Order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Order/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/OrderItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager/CartManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager/CartManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Components/Cards/_variantCard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Components/Cards/_variantCard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Frontend/Layout/_header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Layout/_header.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Frontend/Products/Show/_addToCart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Products/Show/_addToCart.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,6 +197,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "php.override.implement.member.chooser.php.doc": "NONE",
     "ts.external.directory.path": "/Users/lucas/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   },
@@ -238,7 +239,8 @@
       <workItem from="1717598641260" duration="1018000" />
       <workItem from="1717657225630" duration="17813000" />
       <workItem from="1717676740878" duration="9000000" />
-      <workItem from="1717743701337" duration="10391000" />
+      <workItem from="1717743701337" duration="25224000" />
+      <workItem from="1718002955473" duration="15959000" />
     </task>
     <servers />
   </component>

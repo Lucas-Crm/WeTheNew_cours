@@ -19,6 +19,27 @@
         &.navbar-icons {
             flex: 0.5;
         }
+
+
+        .cart{
+            position: relative;
+            cursor: pointer;
+
+            &-count{
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                z-index: 2;
+                bottom: -0.5em;
+                right: -0.5em;
+                width: 1rem;
+                height: 1rem;
+                font-size: .7em;
+                animation: colorful-border 1s infinite;
+            }
+
+        }
+
     }
 
     &-form {
@@ -42,4 +63,33 @@
             width: max-content;
         }
     }
+}
+
+@keyframes colorful-border {
+    0% {background-color: red;}
+    0% {transform: scale(1);}
+
+    10% {background-color: #5bff00;}
+    10% {transform: scale(1.5);}
+
+    25% {background-color: orange;}
+    25% {transform: scale(1);}
+
+    30% {background-color: red;}
+    30% {transform: scale(1.5);}
+
+    50% {background-color: yellow;}
+    50% {transform: scale(1);}
+
+    60% {background-color: #e800ff;}
+    60% {transform: scale(1.5);}
+
+    75% {background-color: green;}
+    75% {transform: scale(1);}
+
+    85% {background-color: #02ffe9;}
+    85% {transform: scale(1.5);}
+
+    100% {background-color: blue;}
+    100% {transform: scale(1);}
 }

@@ -67,6 +67,30 @@ class Order
         $this->orderItems = new ArrayCollection();
     }
 
+
+    public function getPriceHT(): float{
+        $priceHT = 0;
+
+        foreach ($this->orderItems as $orderItem){
+            $priceHT += $orderItem->getPriceHT();
+        }
+
+        return $priceHT;
+
+    }
+
+    public function getPriceTTC(): float{
+
+        $priceTTC = 0;
+
+        foreach ($this->orderItems as $orderItem){
+            $priceTTC += $orderItem->getPriceTTC();
+        }
+
+        return $priceTTC;
+    }
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -144,5 +168,15 @@ class Order
         }
 
         return $this;
+    }
+
+    public function removeAllOrderItems(): static
+    {
+        foreach($this->orderItems as $orderItem){
+            $this->removeOrderItem($orderItem);
+        }
+
+        return $this;
+
     }
 }
