@@ -1,20 +1,28 @@
-{% extends 'base.html.twig' %}
+{% extends 'Backend/base.html.twig' %}
 
 {% block title %}Hello DeliveryController!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<section class="container">
+    <div class="text-center">
+        <h1>Admin des Delivery</h1>
+        <a class="btn btn-secondary" href="{{ path('admin.delivery.create') }}">Create</a>
+    </div>
+    <div class="d-flex">
+        {% for delivery in deliverys %}
+            <div class="card w-25 m-3 border-{{ delivery.enable ? 'success' : 'danger' }} bg-dark">
+                <h2>{{ delivery.name }}</h2>
+                <p>{{ delivery.description }}</p>
+                <p>{{ delivery.price }}</p>
+                <p>{{ delivery.enable ? 'Actif' : 'Pas Actif' }}</p>
+                <div class="d-lg-flex">
+                    <a class="btn btn-secondary" href="{{ path('admin.delivery.update', {id: delivery.id}) }}">Update</a>
+                    {{ include('Backend/Delivery/_delete.html.twig') }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code>/Users/lucas/Documents/Site/symfapp/WeTheNew_cours/src/Controller/Backend/DeliveryController.php</code></li>
-        <li>Your template at <code>/Users/lucas/Documents/Site/symfapp/WeTheNew_cours/templates/backend/delivery/index.html.twig</code></li>
-    </ul>
-</div>
 {% endblock %}

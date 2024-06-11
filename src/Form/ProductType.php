@@ -2,14 +2,18 @@
 
 namespace App\Form;
 
+use App\Entity\Delivery;
 use App\Entity\Product\Gender;
 use App\Entity\Product\Model;
 use App\Entity\Product\Product;
 use App\Form\DataTransformer\ProductAssociationsTransformer;
 use App\Form\ProductImageType;
+use App\Repository\DeliveryRepository;
 use App\Repository\Product\GenderRepository;
 use App\Repository\Product\ModelRepository;
 use App\Repository\Product\ProductRepository;
+use Doctrine\ORM\EntityRepository;
+use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
@@ -85,6 +89,19 @@ class ProductType extends AbstractType
                     'rows' => 3,
                 ],
                 'required' => false,
+            ])
+            ->add('delivery', EntityType::class, [
+                'class'=> Delivery::class,
+                'query_builder'=> function (EntityRepository $er): QueryBuilder{
+                    return $er->createQueryBuilder('d')
+                        ->andWhere('d.enable = :enable')
+                        ->setParameter('enable', true)
+                        ->orderBy('d.name', 'ASC');
+                },
+                'choice_label'=> 'name',
+                'multiple' => false,
+                'expanded' => false
+
             ])
             ->add('enable', CheckboxType::class, [
                 'label' => 'Actif',

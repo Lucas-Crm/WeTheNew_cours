@@ -1,0 +1,21 @@
+{% extends 'Backend/base.html.twig' %}
+
+
+{% block title %}
+    Create Delivery
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+<section class="container">
+    <div class="text-center">
+        <h1>Create Delivery</h1>
+        <a class="m-3 btn btn-secondary" href="{{ path('admin.delivery.index') }}">Retour a la liste des delivery</a>
+    </div>
+
+    {{ include('Backend/Delivery/_form.hgtml.twig') }}
+</section>
+
+{% endblock %}
+

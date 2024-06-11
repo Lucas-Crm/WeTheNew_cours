@@ -2,7 +2,11 @@
 
 namespace App\Entity;
 
+use App\Entity\Product\Product;
+use App\Entity\Traits\EnableTrait;
 use App\Repository\DeliveryRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -11,6 +15,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ORM\Entity(repositoryClass: DeliveryRepository::class)]
 class Delivery
 {
+    use EnableTrait;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
@@ -28,8 +34,19 @@ class Delivery
     #[Assert\PositiveOrZero]
     private ?float $price = null;
 
-    #[ORM\Column]
-    private ?bool $enable = null;
+//    #[ORM\Column]
+//    private ?bool $enable = null;
+
+    /**
+     * @var Collection<int, Product>
+     */
+    #[ORM\OneToMany(targetEntity: Product::class, mappedBy: 'delivery')]
+    private Collection $products;
+
+    public function __construct()
+    {
+        $this->products = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -72,14 +89,44 @@ class Delivery
         return $this;
     }
 
-    public function isEnable(): ?bool
+//    public function isEnable(): ?bool
+//    {
+//        return $this->enable;
+//    }
+//
+//    public function setEnable(bool $enable): static
+//    {
+//        $this->enable = $enable;
+//
+//        return $this;
+//    }
+
+    /**
+     * @return Collection<int, Product>
+     */
+    public function getProducts(): Collection
     {
-        return $this->enable;
+        return $this->products;
     }
 
-    public function setEnable(bool $enable): static
+    public function addProduct(Product $product): static
     {
-        $this->enable = $enable;
+        if (!$this->products->contains($product)) {
+            $this->products->add($product);
+            $product->setDelivery($this);
+        }
+
+        return $this;
+    }
+
+    public function removeProduct(Product $product): static
+    {
+        if ($this->products->removeElement($product)) {
+            // set the owning side to null (unless already changed)
+            if ($product->getDelivery() === $this) {
+                $product->setDelivery(null);
+            }
+        }
 
         return $this;
     }
