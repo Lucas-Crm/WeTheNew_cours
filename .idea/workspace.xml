@@ -6,15 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/abstracts/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/abstracts/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_breadcrumb.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Order/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Order/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/OrderItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Frontend/Layout/_header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Layout/_header.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Frontend/Products/Show/_addToCart.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Products/Show/_addToCart.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Frontend/Checkout/_breadcrumb.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Checkout/_breadcrumb.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Frontend/Checkout/_totals.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Checkout/_totals.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,26 +185,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "developpement",
-    "last_opened_file_path": "/Users/lucas/Documents/Site/symfapp/WeTheNew_cours",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "ts.external.directory.path": "/Users/lucas/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;checkout&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lucas/Documents/Site/symfapp/WeTheNew_cours&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/lucas/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -221,8 +219,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.17011.119" />
-        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.17011.119" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.17890.8" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.17890.8" />
       </set>
     </attachedChunks>
   </component>
@@ -240,7 +238,9 @@
       <workItem from="1717657225630" duration="17813000" />
       <workItem from="1717676740878" duration="9000000" />
       <workItem from="1717743701337" duration="25224000" />
-      <workItem from="1718002955473" duration="15959000" />
+      <workItem from="1718002955473" duration="24328000" />
+      <workItem from="1718030501507" duration="1335000" />
+      <workItem from="1718089192552" duration="9423000" />
     </task>
     <servers />
   </component>
