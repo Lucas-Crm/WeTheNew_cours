@@ -1,0 +1,28 @@
+{% extends 'Backend/base.html.twig' %}
+
+{% block title %}Hello DeliveryController!{% endblock %}
+
+{% block body %}
+
+<section class="container">
+    <div class="text-center">
+        <h1>Admin des Delivery</h1>
+        <a class="btn btn-secondary" href="{{ path('admin.delivery.create') }}">Create</a>
+    </div>
+    <div class="d-flex">
+        {% for delivery in deliverys %}
+            <div class="card w-25 m-3 border-{{ delivery.enable ? 'success' : 'danger' }} bg-dark">
+                <h2>{{ delivery.name }}</h2>
+                <p>{{ delivery.description }}</p>
+                <p>{{ delivery.price }}</p>
+                <p>{{ delivery.enable ? 'Actif' : 'Pas Actif' }}</p>
+                <div class="d-lg-flex">
+                    <a class="btn btn-secondary" href="{{ path('admin.delivery.update', {id: delivery.id}) }}">Update</a>
+                    {{ include('Backend/Delivery/_delete.html.twig') }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

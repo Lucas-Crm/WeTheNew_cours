@@ -9,6 +9,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\Boolean;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -79,9 +80,19 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\OneToMany(targetEntity: Order::class, mappedBy: 'user')]
     private Collection $orders;
 
+    /**
+     * @var Collection<int, Address>
+     */
+    #[ORM\ManyToMany(targetEntity: Address::class, mappedBy: 'user')]
+    private Collection $addresses;
+
+    #[ORM\ManyToOne(inversedBy: 'users')]
+    private ?Address $default_address_id = null;
+
     public function __construct()
     {
         $this->orders = new ArrayCollection();
+        $this->addresses = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -238,6 +249,65 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
                 $order->setUser(null);
             }
         }
+
+        return $this;
+    }
+
+
+    public function hasAddress(Address $address): bool
+    {
+        foreach ($this->addresses as $userAddress){
+            if(
+                $address->getAddress() === $userAddress->getAddress() &&
+                $address->getZipCode() === $userAddress->getZipCode() &&
+                $address->getCity() === $userAddress->getCity()
+            ){
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+    /**
+     * @return Collection<int, Address>
+     */
+    public function getAddresses(): Collection
+    {
+        return $this->addresses;
+    }
+
+    public function addAddress(Address $address): static
+    {
+        if($this->default_address_id === null){
+            $this->setDefaultAddressId($address);
+        }
+
+        if (!$this->addresses->contains($address)) {
+            $this->addresses->add($address);
+            $address->addUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAddress(Address $address): static
+    {
+        if ($this->addresses->removeElement($address)) {
+            $address->removeUser($this);
+        }
+
+        return $this;
+    }
+
+    public function getDefaultAddressId(): ?Address
+    {
+        return $this->default_address_id;
+    }
+
+    public function setDefaultAddressId(?Address $default_address_id): static
+    {
+        $this->default_address_id = $default_address_id;
 
         return $this;
     }
