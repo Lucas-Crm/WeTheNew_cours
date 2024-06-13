@@ -41,6 +41,10 @@
       &-footer{
         @include flex(space-between, flex-end);
         width: 100%;
+
+        p{
+          margin-bottom: 0;
+        }
       }
 
       &-name{
