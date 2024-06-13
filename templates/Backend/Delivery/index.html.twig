@@ -14,7 +14,7 @@
             <div class="card w-25 m-3 border-{{ delivery.enable ? 'success' : 'danger' }} bg-dark">
                 <h2>{{ delivery.name }}</h2>
                 <p>{{ delivery.description }}</p>
-                <p>{{ delivery.price }}</p>
+                <p>{{ delivery.price|format_currency('EUR') }}</p>
                 <p>{{ delivery.enable ? 'Actif' : 'Pas Actif' }}</p>
                 <div class="d-lg-flex">
                     <a class="btn btn-secondary" href="{{ path('admin.delivery.update', {id: delivery.id}) }}">Update</a>

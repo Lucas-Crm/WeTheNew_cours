@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use App\Entity\Delivery\Shipping;
 use App\Entity\Product\Product;
 use App\Entity\Traits\EnableTrait;
 use App\Repository\DeliveryRepository;
@@ -43,9 +44,16 @@ class Delivery
     #[ORM\OneToMany(targetEntity: Product::class, mappedBy: 'delivery')]
     private Collection $products;
 
+    /**
+     * @var Collection<int, Shipping>
+     */
+    #[ORM\OneToMany(targetEntity: Shipping::class, mappedBy: 'delivery')]
+    private Collection $shippings;
+
     public function __construct()
     {
         $this->products = new ArrayCollection();
+        $this->shippings = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -125,6 +133,36 @@ class Delivery
             // set the owning side to null (unless already changed)
             if ($product->getDelivery() === $this) {
                 $product->setDelivery(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Shipping>
+     */
+    public function getShippings(): Collection
+    {
+        return $this->shippings;
+    }
+
+    public function addShipping(Shipping $shipping): static
+    {
+        if (!$this->shippings->contains($shipping)) {
+            $this->shippings->add($shipping);
+            $shipping->setDelivery($this);
+        }
+
+        return $this;
+    }
+
+    public function removeShipping(Shipping $shipping): static
+    {
+        if ($this->shippings->removeElement($shipping)) {
+            // set the owning side to null (unless already changed)
+            if ($shipping->getDelivery() === $this) {
+                $shipping->setDelivery(null);
             }
         }
 

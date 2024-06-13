@@ -1,0 +1,45 @@
+.form-shipping{
+  &-list{
+    @include grid(repeat(2, 1fr), 1rem);
+    margin-bottom: 1rem;
+  }
+
+  &-card{
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: $border-radius;
+    border: 1px solid $secondary;
+    transition: .2s ease-in;
+
+
+    input[type="radio"] {
+      display: none;
+    }
+
+      &-price, &-description{
+        margin-bottom: 0;
+      }
+
+      &-price{
+        text-align: end;
+        font-weight: bold;
+      }
+
+      &:has(input:checked){
+        background-color: $secondary;
+        color: $primary;
+        animation:  boup infinite ease-in;
+      }
+
+  }
+}
+
+
+@keyframes boup {
+  0% {transform: scale(1)}
+  25%{transform: scale(1.1)}
+  50%{transform: scale(1)}
+  75%{transform: scale(1.1)}
+  90% {transform: scale(1)}
+  100%{transform: scale(1.1)}
+}
