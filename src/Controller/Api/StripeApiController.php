@@ -2,17 +2,30 @@
 
 namespace App\Controller\Api;
 
+use App\Factory\StripeFactory;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Attribute\Route;
 
+
+#[Route('/api/payment/stripe', name: 'api.payment.stripe')]
 class StripeApiController extends AbstractController
 {
-    #[Route('/api/stripe/api', name: 'app_api_stripe_api')]
-    public function index(): Response
+    #[Route('/notify', name: '.notify', methods: ['POST'])]
+    public function notify(Request $request, StripeFactory $stripeFactory): JsonResponse
     {
-        return $this->render('api/stripe_api/index.html.twig', [
-            'controller_name' => 'StripeApiController',
-        ]);
+
+        //On recupere la cle publique dans l'entete de la requete
+        $signature = $request->headers->get('stripe-signature');
+
+        if (!$signature){
+            throw new \InvalidArgumentException('Missing Stripe signature');
+        }
+
+        return $stripeFactory->handleStripeRequest($signature, $request->getContent());
+
     }
 }
+
+
