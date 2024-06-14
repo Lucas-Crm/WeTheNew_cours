@@ -69,10 +69,17 @@ class Order
     #[ORM\OneToMany(targetEntity: Shipping::class, mappedBy: 'orderRef', orphanRemoval: true)]
     private Collection $shippings;
 
+    /**
+     * @var Collection<int, Payement>
+     */
+    #[ORM\OneToMany(targetEntity: Payement::class, mappedBy: 'orderRef', orphanRemoval: true)]
+    private Collection $payements;
+
     public function __construct()
     {
         $this->orderItems = new ArrayCollection();
         $this->shippings = new ArrayCollection();
+        $this->payements = new ArrayCollection();
     }
 
 
@@ -212,6 +219,36 @@ class Order
             // set the owning side to null (unless already changed)
             if ($shipping->getOrderRef() === $this) {
                 $shipping->setOrderRef(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Payement>
+     */
+    public function getPayements(): Collection
+    {
+        return $this->payements;
+    }
+
+    public function addPayement(Payement $payement): static
+    {
+        if (!$this->payements->contains($payement)) {
+            $this->payements->add($payement);
+            $payement->setOrderRef($this);
+        }
+
+        return $this;
+    }
+
+    public function removePayement(Payement $payement): static
+    {
+        if ($this->payements->removeElement($payement)) {
+            // set the owning side to null (unless already changed)
+            if ($payement->getOrderRef() === $this) {
+                $payement->setOrderRef(null);
             }
         }
 

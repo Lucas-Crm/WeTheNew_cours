@@ -3,6 +3,7 @@
 namespace App\Entity;
 
 use App\Entity\Order\Order;
+use App\Entity\Order\Payement;
 use App\Entity\Traits\DateTimeTrait;
 use App\Repository\UserRepository;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -89,10 +90,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\ManyToOne(inversedBy: 'users')]
     private ?Address $default_address_id = null;
 
+    /**
+     * @var Collection<int, Payement>
+     */
+    #[ORM\OneToMany(targetEntity: Payement::class, mappedBy: 'user')]
+    private Collection $payements;
+
     public function __construct()
     {
         $this->orders = new ArrayCollection();
         $this->addresses = new ArrayCollection();
+        $this->payements = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -308,6 +316,36 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setDefaultAddressId(?Address $default_address_id): static
     {
         $this->default_address_id = $default_address_id;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Payement>
+     */
+    public function getPayements(): Collection
+    {
+        return $this->payements;
+    }
+
+    public function addPayement(Payement $payement): static
+    {
+        if (!$this->payements->contains($payement)) {
+            $this->payements->add($payement);
+            $payement->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removePayement(Payement $payement): static
+    {
+        if ($this->payements->removeElement($payement)) {
+            // set the owning side to null (unless already changed)
+            if ($payement->getUser() === $this) {
+                $payement->setUser(null);
+            }
+        }
 
         return $this;
     }

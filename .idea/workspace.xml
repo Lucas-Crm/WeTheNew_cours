@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/components/_cartForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/components/_cartForm.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Frontend/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Frontend/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Frontend/Checkout/_breadcrumb.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Checkout/_breadcrumb.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Frontend/Checkout/_totals.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Frontend/Checkout/_totals.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,6 +174,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -240,7 +243,8 @@
       <workItem from="1718002955473" duration="24328000" />
       <workItem from="1718030501507" duration="1335000" />
       <workItem from="1718089192552" duration="17304000" />
-      <workItem from="1718262888803" duration="8535000" />
+      <workItem from="1718262888803" duration="25641000" />
+      <workItem from="1718348332157" duration="794000" />
     </task>
     <servers />
   </component>
