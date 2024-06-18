@@ -1,0 +1,61 @@
+{% extends 'Backend/base.html.twig' %}
+
+{% block title %}
+    Liste des Order
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Order</h1>
+        <a class="btn btn-primary" href="{{ path('admin.order.index') }}">Retour a la liste des orders</a>
+        <twig:DeleteForm action="{{ path('admin.order.cancel', {id: order.id}) }}" message="Es tu sur de vouloir annuler cette commande" csrftoken="{{ csrf_token('delete' ~ order.id)  }}" />
+        <div class="d-flex">
+
+            <div class="card m-3 bg-light text-black">
+                <h2>Information commande</h2>
+                <hr>
+                <p>Commande passée le: {{ order.createdAt|format_datetime('full', 'short') }}</p>
+                <p>Status de la commande: {{ order.status }}</p>
+            </div>
+            <div class="card m-3 bg-light text-black">
+                <h2>Information sur le client </h2>
+                <hr>
+                <p>Nom du client: {{ order.user.fullName }}</p>
+                <p>Email du client: {{ order.user.email }}</p>
+                <p>Adresse du client: {{ order.user.defaultAddressId.address }}, {{ order.user.defaultAddressId.zipCode }} {{ order.user.defaultAddressId.city }}</p>
+
+            </div>
+            <div class="card m-3 bg-light text-black">
+                <h2 class="">Information sur le paiement</h2>
+                <hr>
+                <p>Paiement le: {{ dump(order.payements) }}</p>
+            </div>
+        </div>
+
+        <div class="">
+
+            <div >
+                <h2>Produits</h2>
+                {% for orderItem in order.orderItems %}
+                    <div class="bg-light text-black card mb-3">
+                        <p>{{ orderItem.productVariant.product.name }}</p>
+                        <p>{{ orderItem.productVariant.product.description }}</p>
+                        <p>{{ orderItem.productVariant.product.name }}</p>
+                        <p>Qantite: {{ orderItem.quantity }}</p>
+                        <p>Prix: {{ orderItem.productVariant.priceHT|format_currency('EUR') }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+            <div class="card m-3 bg-light text-black">
+                <h2>Totals</h2>
+                <hr>
+                <p>Prix HT: {{ order.priceHT|format_currency('EUR') }}</p>
+                <p>Taxe: {{  (order.priceTTC - order.priceHT)|format_currency('EUR')  }}</p>
+                <p>Prix Total: {{ order.priceTTC|format_currency('EUR') }}</p>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}

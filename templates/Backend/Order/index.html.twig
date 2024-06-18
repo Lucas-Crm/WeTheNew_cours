@@ -1,0 +1,38 @@
+{% extends 'Backend/base.html.twig' %}
+
+{% block title %}
+    Liste des Order
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <section>
+        <h1>Liste des order</h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>User</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th>Status</th>
+        <th>Price</th>
+        <th>Action</th>
+    </tr>
+        {% for order in orders %}
+        <tr>
+            <th >{{ order.id }}</th>
+            <th>{{ order.user.fullName }}</th>
+            <th >{{ order.createdAt|format_datetime('full', 'none') }}</th>
+            <th>{{ order.updatedAt|format_datetime('full', 'none')  }}</th>
+            <th >{{ order.status }}</th>
+            <th >{{ order.priceTTC|format_currency('EUR') }}</th>
+            <th >
+                <a class="btn btn-primary" href="{{ path('admin.order.show', {id: order.id}) }}">Voir plus</a>
+                <twig:DeleteForm action="{{ path('admin.order.cancel', {id: order.id}) }}" message="Es tu sur de vouloir annuler cette commande" csrftoken="{{ csrf_token('delete' ~ order.id)  }}" />
+            </th>
+        </tr>
+        {% endfor %}
+</table>
+
+    </section>
+{% endblock %}
