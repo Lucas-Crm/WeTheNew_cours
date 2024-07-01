@@ -34,7 +34,6 @@ class OrderItem
     #[ORM\JoinColumn(nullable: false)]
     private ?Order $orderRef = null;
 
-
     public function getPriceHT(): float{
         return $this->getProductVariant()->getPriceHT() * $this->getQuantity();
     }

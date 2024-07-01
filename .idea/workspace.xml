@@ -5,8 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/OrderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product/Gender.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product/Gender.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Product/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Traits/DateTimeTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Traits/DateTimeTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Traits/EnableTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Traits/EnableTrait.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +186,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
       <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -183,7 +203,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;admin-order&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developpement&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/lucas/Documents/Site/symfapp/WeTheNew_cours&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -215,8 +235,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.17890.8" />
-        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.17890.8" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PS-241.18034.69" />
+        <option value="bundled-php-predefined-ba97393d7c68-48a1a656d44e-com.jetbrains.php.sharedIndexes-PS-241.18034.69" />
       </set>
     </attachedChunks>
   </component>
@@ -239,6 +259,9 @@
       <workItem from="1718089192552" duration="17304000" />
       <workItem from="1718262888803" duration="25641000" />
       <workItem from="1718348332157" duration="23853000" />
+      <workItem from="1718806205339" duration="1978000" />
+      <workItem from="1718974035817" duration="248000" />
+      <workItem from="1719487643351" duration="2973000" />
     </task>
     <servers />
   </component>
