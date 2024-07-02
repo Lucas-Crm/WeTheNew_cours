@@ -4,7 +4,6 @@ namespace App\Form;
 
 use App\Entity\Delivery;
 use App\Entity\Delivery\Shipping;
-use App\Entity\Order\Order;
 use App\Repository\DeliveryRepository;
 use Doctrine\ORM\QueryBuilder;
 use Symfony\Bridge\Doctrine\Form\Type\EntityType;

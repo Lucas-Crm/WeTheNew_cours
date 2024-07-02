@@ -5,7 +5,6 @@ namespace App\Controller\Backend;
 use App\Entity\Order\Order;
 use App\Repository\Order\OrderRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Mapping\Entity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;

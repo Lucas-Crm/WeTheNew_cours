@@ -33,7 +33,7 @@ class UserEntityTest extends KernelTestCase
 
         $users = $userRepo->findAll();
 
-        self::assertCount(11, $users);
+        self::assertCount(12, $users);
 
     }
 
