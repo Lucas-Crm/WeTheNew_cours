@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="" />
+    <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/build.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/build.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -188,7 +191,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;tests&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;developpement&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/lucas/Documents/Site/symfapp/WeTheNew_cours&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -264,6 +267,7 @@
       <workItem from="1719487643351" duration="2973000" />
       <workItem from="1719904057354" duration="13905000" />
       <workItem from="1719920185806" duration="4437000" />
+      <workItem from="1719926834361" duration="311000" />
     </task>
     <servers />
   </component>
