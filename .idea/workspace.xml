@@ -6,36 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3abc6885-6205-4958-8def-66855b98b38e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3abc6885-6205-4958-8def-66855b98b38e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Backend/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Backend/OrderController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Backend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Backend/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Frontend/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Frontend/CartController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Frontend/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Frontend/CheckoutController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Order/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/AddToCartType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddToCartType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/AddressType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddressType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CartItemType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CartItemType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/PaymentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PaymentType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProductImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductImageType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProductVariantType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductVariantType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ShippingCheckoutType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ShippingCheckoutType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Order/OrderRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Order/OrderRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/Product/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Product/ProductRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Components/Cards/_productCard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Components/Cards/_productCard.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Entity/UserEntityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Entity/UserEntityTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Fixtures/UserFixtures.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixtures/UserFixtures.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,6 +180,7 @@
       <path value="$PROJECT_DIR$/vendor/hautelook/alice-bundle" />
       <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
       <path value="$PROJECT_DIR$/vendor/symplify/easy-coding-standard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/requirements-checker" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -294,7 +270,7 @@
       <workItem from="1718974035817" duration="248000" />
       <workItem from="1719487643351" duration="2973000" />
       <workItem from="1719904057354" duration="13905000" />
-      <workItem from="1719920185806" duration="340000" />
+      <workItem from="1719920185806" duration="2910000" />
     </task>
     <servers />
   </component>
