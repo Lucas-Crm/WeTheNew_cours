@@ -101,3 +101,8 @@ jobs:
       - name: Static analysis of PHP code (PHPStan) and Twig with Lint
         run: |
           php bin/console lint:twig ./templates
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
