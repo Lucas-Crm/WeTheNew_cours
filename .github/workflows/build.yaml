@@ -37,6 +37,7 @@ jobs:
         with:
           php-version: ${{ matrix.php-versions }}
           extensions: mbstring, xml, ctype, iconv, intl, pdo, pdo_mysql, dom, filter, gd, iconv, json, mbstring, fileinfo
+          coverage: xdebug
         env:
           update: true
 
@@ -95,7 +96,7 @@ jobs:
         run: |
           php bin/console doctrine:database:create --env=test
           php bin/console doctrine:schema:update --env=test --force --complete
-          php bin/phpunit --cov=./ --cov-report=xml
+          php bin/phpunit --cov=./phpunit-coverage.xml --cov-report=xml
           
 
       ## —— Static analysis ✨ —————————————————————————————————————————————————
@@ -107,6 +108,6 @@ jobs:
         uses: codecov/codecov-action@v4.0.1
         with:
           directory: ./coverage/reports/
-          files: ./coverage1.xml,./coverage2.xml,!./cache
+          files: ./phpunit-coverage.xml,!./cache
           verbose: true
           token: ${{ secrets.CODECOV_TOKEN }}
