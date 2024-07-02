@@ -95,7 +95,7 @@ jobs:
         run: |
           php bin/console doctrine:database:create --env=test
           php bin/console doctrine:schema:update --env=test --force --complete
-          php bin/phpunit --testdox --cov=./ --cov-report=xml
+          php bin/phpunit --testdox --cov=./ --coverage-report=xml
           
 
       ## —— Static analysis ✨ —————————————————————————————————————————————————
