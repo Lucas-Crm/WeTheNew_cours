@@ -5,7 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c8c6bad-4492-40fa-a7af-9820703c2a93" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/WeTheNew_cours.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3abc6885-6205-4958-8def-66855b98b38e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3abc6885-6205-4958-8def-66855b98b38e.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/93756216-a766-4d89-8bee-165839b1fd4b.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Backend/OrderController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Backend/OrderController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Backend/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Backend/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Frontend/CartController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Frontend/CartController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Frontend/CheckoutController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Frontend/CheckoutController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AddToCartType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddToCartType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/AddressType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/AddressType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CartItemType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CartItemType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/PaymentType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PaymentType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProductImageType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductImageType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ProductVariantType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductVariantType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ShippingCheckoutType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ShippingCheckoutType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Order/OrderRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Order/OrderRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/Product/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/Product/ProductRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Components/Cards/_productCard.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Components/Cards/_productCard.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Entity/UserEntityTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Entity/UserEntityTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Fixtures/UserFixtures.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Fixtures/UserFixtures.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +128,6 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
       <path value="$PROJECT_DIR$/vendor/doctrine/common" />
       <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
@@ -175,6 +204,7 @@
       <path value="$PROJECT_DIR$/vendor/theofidry/alice-data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/hautelook/alice-bundle" />
       <path value="$PROJECT_DIR$/vendor/nelmio/alice" />
+      <path value="$PROJECT_DIR$/vendor/symplify/easy-coding-standard" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -186,44 +216,50 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "tests",
-    "last_opened_file_path": "/Users/lucas/Documents/Site/symfapp/WeTheNew_cours",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "php.override.implement.member.chooser.php.doc": "NONE",
-    "ts.external.directory.path": "/Users/lucas/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;tests&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/lucas/Documents/Site/symfapp/WeTheNew_cours&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Settings.Markdown&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/lucas/Applications/PhpStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/Frontend/Checkout" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.UserEntityTest.testPhone">
+  <component name="RunManager" selected="PHPUnit.SecurityControllerTest.testResponseLoginPage">
     <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml.dist" scope="XML" use_alternative_configuration_file="true" />
       <method v="2" />
     </configuration>
-    <configuration name="UserEntityTest.testPhone" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="App\Tests\Entity\UserEntityTest" file="$PROJECT_DIR$/tests/Entity/UserEntityTest.php" method="testPhone" scope="Method" />
+    <configuration name="SecurityControllerTest.testLoginFormWithBadCredential" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\SecurityControllerTest" file="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" method="testLoginFormWithBadCredential" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SecurityControllerTest.testResponseLoginPage" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Controller\SecurityControllerTest" file="$PROJECT_DIR$/tests/Controller/SecurityControllerTest.php" method="testResponseLoginPage" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.UserEntityTest.testPhone" />
+        <item itemvalue="PHPUnit.SecurityControllerTest.testResponseLoginPage" />
+        <item itemvalue="PHPUnit.SecurityControllerTest.testLoginFormWithBadCredential" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +293,8 @@
       <workItem from="1718806205339" duration="1978000" />
       <workItem from="1718974035817" duration="248000" />
       <workItem from="1719487643351" duration="2973000" />
-      <workItem from="1719818066745" duration="22693000" />
+      <workItem from="1719904057354" duration="13905000" />
+      <workItem from="1719920185806" duration="340000" />
     </task>
     <servers />
   </component>
@@ -274,5 +311,14 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="WeTheNew_cours" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///Users/lucas/Documents/Site/symfapp/WeTheNew_cours}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
