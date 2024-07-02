@@ -96,8 +96,8 @@ jobs:
         run: |
           php bin/console doctrine:database:create --env=test
           php bin/console doctrine:schema:update --env=test --force --complete
-          php bin/phpunit --cov=./phpunit-coverage.xml --cov-report=xml
-          
+          php bin/phpunit --testdox --coverage-clover=./phpunit-coverage.xml
+      
 
       ## —— Static analysis ✨ —————————————————————————————————————————————————
       - name: Static analysis of PHP code (PHPStan) and Twig with Lint
